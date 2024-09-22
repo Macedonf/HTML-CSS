@@ -161,4 +161,13 @@ body {
         }
     }
     
+    footer h1{
+        text-align: center;
+        font-family: fantasy;
+    }
+
+    .contato{
+        display: flex;
+        align-items: center;    
+        justify-content: center;
     }
