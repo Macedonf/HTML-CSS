@@ -1,173 +1,215 @@
 body {
     background-image: url('./imagens/Minimal\ Taj\ Mahal\ India\ Vlog\ YouTube\ Thumbnail.png');
-    background-position: center;  /* Centraliza a imagem no fundo */
+    background-position: center;
+    /* Centraliza a imagem no fundo */
     /* background-repeat: no-repeat; /* Impede a repetição da imagem */
-    /* background-size: cover;       Faz a imagem cobrir todo o fundo */ 
+    /* background-size: cover;       Faz a imagem cobrir todo o fundo */
 
-  }
-  
+}
 
-.navbar-brand img{
+
+.navbar-brand img {
     width: 12vw;
 }
 
-.container-fluid{
+.container-fluid {
     background-color: black;
-    height: 100px;  
+    height: 100px;
 }
 
 .navbar .nav-link {
-    color: #fcf9f9; /* Cor do texto dos botões */
+    color: #fcf9f9;
+    /* Cor do texto dos botões */
 }
 
 .navbar .nav-link:hover {
-    color: #032142; /* Cor do texto dos botões ao passar o mouse (opcional) */
+    color: #032142;
+    /* Cor do texto dos botões ao passar o mouse (opcional) */
 }
 
 /* Botão de pesquisa */
 .navbar .btn-outline-success {
-    color: #f7f3f3; /* Cor do texto */
-    border-color: #f7f3f3; /* Cor da borda */
+    color: #f7f3f3;
+    /* Cor do texto */
+    border-color: #f7f3f3;
+    /* Cor da borda */
 }
 
 .navbar .btn-outline-success:hover {
-    color: #fff; /* Cor do texto ao passar o mouse */
-    background-color: #000; /* Cor de fundo ao passar o mouse */
-    border-color: #000; /* Cor da borda ao passar o mouse */
+    color: #fff;
+    /* Cor do texto ao passar o mouse */
+    background-color: #000;
+    /* Cor de fundo ao passar o mouse */
+    border-color: #000;
+    /* Cor da borda ao passar o mouse */
 }
 
-.apresentação{
+.apresentação {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center; /* Centraliza o texto */
+    text-align: center;
+    /* Centraliza o texto */
     padding: 0px;
     margin: 0;
-  }
+}
 
-  section img {
+section img {
     width: 90vw;
     height: 300px;
-  }
+}
 
-  .imagembanner{
+.imagembanner {
     display: block;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center; /* Centraliza o texto */
+    text-align: center;
+    /* Centraliza o texto */
     padding: 0px;
     margin: 0rem 0rem 4rem 0rem;
-  }
+}
 
-  .Destinos{
-    display: flex; /* Usa flexbox para layout */
-    gap: 20px; /* Espaço entre os cards */
-    flex-wrap: wrap; /* Permite que os cards se movam para a linha seguinte se não houver espaço suficiente */
-    justify-content: center; /* Centraliza os cards horizontalmente */
+.Destinos {
+    display: flex;
+    /* Usa flexbox para layout */
+    gap: 20px;
+    /* Espaço entre os cards */
+    flex-wrap: wrap;
+    /* Permite que os cards se movam para a linha seguinte se não houver espaço suficiente */
+    justify-content: center;
+    /* Centraliza os cards horizontalmente */
 
-  }
+}
 
 
- .produto{
+.produto {
     display: flex;
     justify-content: center;
     text-align: center;
-    flex: 1 1 18rem; /* Permite que os cards se ajustem e ocupem pelo menos 18rem de largura */
-    box-sizing:border-box; /* Inclui padding e bordas na largura e altura total do elemento */
+    flex: 1 1 18rem;
+    /* Permite que os cards se ajustem e ocupem pelo menos 18rem de largura */
+    box-sizing: border-box;
+    /* Inclui padding e bordas na largura e altura total do elemento */
     margin: 0;
 }
 
-  
-    .produto img{
-        height: 15vw;
+
+.produto img {
+    height: 15vw;
+}
+
+.protitulo {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    margin: 30px 0;
+    font-weight: bold;
+
+}
+
+.melhores {
+    text-decoration: underline;
+}
+
+.preco {
+    text-decoration: line-through;
+}
+
+.rodape {
+    background-color: #ffffff;
+    margin: 30px 0px 3px 0px;
+}
+
+@media (max-width: 500px) {
+
+    /* Ajustes no cabeçalho */
+    .navbar-brand img {
+        width: 30vw;
+        /* Aumenta o tamanho da imagem no cabeçalho */
+    }
+
+    .navbar .nav-link {
+        font-size: 14px;
+        /* Diminui o tamanho da fonte dos links da navbar */
+    }
+
+    /* Ajustes na seção de apresentação */
+    .apresentação h1 {
+        font-size: 14px;
+        /* Reduz o tamanho do título */
+        margin: 20px 0;
+        /* Adiciona margem superior e inferior */
+        text-align: center;
+    }
+
+    /* Ajustes na seção de destinos */
+    .Destinos {
+        flex-direction: column;
+        /* Altera a direção dos cards para coluna */
+        align-items: center;
+        /* Centraliza os cards */
+    }
+
+    .produto {
+        margin-bottom: 20px;
+        /* Espaçamento entre os cards */
+        width: 90%;
+        /* Faz os cards ocuparem 90% da largura */
+        max-width: 300px;
+        /* Limita a largura máxima dos cards */
+    }
+
+    .produto img {
+        height: auto;
+        /* Ajusta a altura das imagens para manter a proporção */
+        width: 100%;
+        /* Faz a imagem ocupar toda a largura do card */
     }
 
     .protitulo {
-      font-family: 'Montserrat', sans-serif;
-      text-align: center;
-      font-size: 40px; 
-      margin: 30px 0; 
-      font-weight: bold;
-      
-  }
-
-    .melhores{
-      text-decoration: underline;
-    }
-
-    .preco{
-      text-decoration: line-through;
-    } 
-
-    .rodape {
-      background-color: #ffffff;
-      margin: 30px 0px 3px 0px;
-    }
-
-      @media (max-width: 768px) {
-        /* Ajustes no cabeçalho */
-        .navbar-brand img {
-            width: 30vw; /* Aumenta o tamanho da imagem no cabeçalho */
-        }
-    
-        .navbar .nav-link {
-            font-size: 14px; /* Diminui o tamanho da fonte dos links da navbar */
-        }
-    
-        /* Ajustes na seção de apresentação */
-        .apresentação h1 {
-            font-size: 14px; /* Reduz o tamanho do título */
-            margin: 20px 0; /* Adiciona margem superior e inferior */
-            text-align: center;
-        }
-    
-        /* Ajustes na seção de destinos */
-        .Destinos {
-            flex-direction: column; /* Altera a direção dos cards para coluna */
-            align-items: center; /* Centraliza os cards */
-        }
-    
-        .produto {
-            margin-bottom: 20px; /* Espaçamento entre os cards */
-            width: 90%; /* Faz os cards ocuparem 90% da largura */
-            max-width: 300px; /* Limita a largura máxima dos cards */
-        }
-    
-        .produto img {
-            height: auto; /* Ajusta a altura das imagens para manter a proporção */
-            width: 100%; /* Faz a imagem ocupar toda a largura do card */
-        }
-    
-        .protitulo {
-            font-size: 30px; /* Reduz o tamanho do título das seções */
-            text-align: center; /* Centraliza o texto */
-            margin: 20px 0; /* Adiciona margem superior e inferior */
-        }
-    
-        /* Ajustes no rodapé */
-        .rodape {
-            padding: 20px; /* Aumenta o padding para um rodapé mais espaçoso */
-            text-align: center; /* Centraliza o texto do rodapé */
-        }
-    
-        .rodape .nav {
-            flex-direction: column; /* Altera a direção dos links do rodapé para coluna */
-            align-items: center; /* Centraliza os links */
-        }
-    
-        .rodape .nav-item {
-            margin-bottom: 10px; /* Espaçamento entre os links do rodapé */
-        }
-    }
-    
-    footer h1{
+        font-size: 30px;
+        /* Reduz o tamanho do título das seções */
         text-align: center;
-        font-family: fantasy;
+        /* Centraliza o texto */
+        margin: 20px 0;
+        /* Adiciona margem superior e inferior */
     }
 
-    .contato{
-        display: flex;
-        align-items: center;    
-        justify-content: center;
+    /* Ajustes no rodapé */
+    .rodape {
+        padding: 20px;
+        /* Aumenta o padding para um rodapé mais espaçoso */
+        text-align: center;
+        /* Centraliza o texto do rodapé */
     }
+
+    .rodape .nav {
+        flex-direction: column;
+        /* Altera a direção dos links do rodapé para coluna */
+        align-items: center;
+        /* Centraliza os links */
+    }
+
+    .rodape .nav-item {
+        margin-bottom: 10px;
+        /* Espaçamento entre os links do rodapé */
+    }
+}
+
+footer h1 {
+    text-align: center;
+    font-family: fantasy;
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+ 
+section form{
+    display: flex;
+    flex-direction: column;
+}
